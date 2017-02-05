@@ -61,11 +61,11 @@ func (t *SimpleChaincode) Invoke(stub shim.ChaincodeStubInterface, function stri
 
 // Query is our entry point for queries
 func (t *SimpleChaincode) Query(stub shim.ChaincodeStubInterface, function string, args []string) ([]byte, error) {
-	fmt.Println("query is running " + function)
+	fmt.Println("nauman, query is running " + function)
 
 	// Handle different functions
 	if function == "dummy_query" {											//read a variable
-		fmt.Println("hi there " + function)						//error
+		fmt.Println("nauman, hi there " + function)						//error
 		return nil, nil;
 	}
 	fmt.Println("query did not find func: " + function)						//error
